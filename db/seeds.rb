@@ -22,9 +22,12 @@ end
 
 puts "Creating Cocktails"
 
-5.times do |c|
-  Cocktail.create([{ name: "Espresso Martini"},
-                   { name: "Boulevardier"},
-                   { name: "Peach Please"},
-                   { name: "Negroni"}])
-end
+# file = URI.open('https://res.cloudinary.com/dtulzuk5j/image/upload/v1613720039/qhkvtr0pfqsulvtmzvnf.jpg')
+# cocktail = Cocktail.new(name: 'Espresso Martini')
+# cocktail.photo.attach(io: file, filename: 'qhkvtr0pfqsulvtmzvnf.jpg', content_type: 'image/jpg')
+# cocktail.save!
+
+file = URI.open('https://giantbomb1.cbsistatic.com/uploads/original/9/99864/2419866-nes_console_set.png')
+cocktail = Cocktail.new(name: 'NES')
+cocktail.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+cocktail.save!
