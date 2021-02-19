@@ -20,14 +20,16 @@ ingredients["drinks"].each do |ingredient|
   puts "create #{i.name}"
 end
 
-puts "Creating Cocktails"
+puts "Creating Cocktails.."
 
-# file = URI.open('https://res.cloudinary.com/dtulzuk5j/image/upload/v1613720039/qhkvtr0pfqsulvtmzvnf.jpg')
-# cocktail = Cocktail.new(name: 'Espresso Martini')
-# cocktail.photo.attach(io: file, filename: 'qhkvtr0pfqsulvtmzvnf.jpg', content_type: 'image/jpg')
-# cocktail.save!
-
-file = URI.open('https://giantbomb1.cbsistatic.com/uploads/original/9/99864/2419866-nes_console_set.png')
-cocktail = Cocktail.new(name: 'NES')
-cocktail.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open('https://images.unsplash.com/photo-1541546006121-5c3bc5e8c7b9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8cGlzY28lMjBzb3VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
+cocktail = Cocktail.new(name: 'Pisco Sour')
+cocktail.photo.attach(io: file, filename: 'Pisco.png', content_type: 'image/png')
 cocktail.save!
+
+file = URI.open('https://images.unsplash.com/photo-1542849187-5ec6ea5e6a27?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bmVncm9uaXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
+cocktail = Cocktail.new(name: 'Negroni')
+cocktail.photo.attach(io: file, filename: 'Negroni.png', content_type: 'image/png')
+cocktail.save!
+
+puts "Cocktail created."
