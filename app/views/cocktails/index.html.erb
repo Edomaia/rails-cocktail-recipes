@@ -15,6 +15,9 @@
           </div>
           <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
         </div>
+        <%= link_to cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" } do %>
+          <i class="fa fa-trash destroy_dose"></i>
+        <% end %>
       </div>
     <% end %>
   </div>
