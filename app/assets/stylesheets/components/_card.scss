@@ -36,3 +36,10 @@
 .card-link:hover {
   opacity: 0.1;
 }
+
+.delete-button {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
